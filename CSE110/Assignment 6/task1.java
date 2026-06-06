@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class task1{
+  public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("N: ");
+    int N=sc.nextInt();
+    int[] num=new int[N];
+    for (int i=0;i<N;i++){
+       System.out.println("Enter a number:");
+       num[i]=sc.nextInt();
+     }
+    System.out.println("Enter another number:");
+    int new_num=sc.nextInt();
+    int[] new_array=new int[num.length+1];
+    for (int i=0;i<num.length;i++){
+       new_array[i]=num[i];
+     }
+    System.out.println("The elements of the array are:");
+    for (int i=0;i<num.length;i++){
+       System.out.println(i+":"+num[i]);
+     }
+    new_array[new_array.length-1]=new_num;
+    System.out.println("After resizing the array:");
+    for (int i=0;i<new_array.length;i++){
+       System.out.print(new_array[i]+" ");
+     }
+  }
+}
+    
+
+        
