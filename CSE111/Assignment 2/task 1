@@ -1,0 +1,37 @@
+public class University{
+ public String name;
+ public String country;
+}
+public class UniversityTester{
+  public static void main(String[] args){
+    
+    University uni1=new University();
+    University uni2=new University();
+    
+    System.out.println(uni1);
+    System.out.println(uni2);
+    
+    System.out.println(uni1.name);
+    System.out.println(uni1.country);
+    
+    System.out.println(uni2.name);
+    System.out.println(uni2.country);
+    
+     //location of the objects not same
+    
+    uni1.name="imperial college london";
+    uni1.country="england";
+    
+    uni2.name="brac university";
+    uni2.country="bangladesh";
+    
+     System.out.println(uni1.name);
+     System.out.println(uni1.country);
+     
+     System.out.println(uni2.name);
+     System.out.println(uni2.country);
+     
+     //the instance variables of both objects have changed.
+     // the instance variables of both objects are not same.
+  }
+}
